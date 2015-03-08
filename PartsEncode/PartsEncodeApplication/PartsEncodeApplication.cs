@@ -18,7 +18,7 @@ namespace PartsEncode
 
         public PartsEncodeApplication()
         {
-            InitializeComponent();SADDDDD;
+            InitializeComponent();
 
             timer1.Enabled = true;
 
