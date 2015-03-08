@@ -18,7 +18,7 @@ namespace PartsEncode
 
         public PartsEncodeApplication()
         {
-            InitializeComponent();
+            InitializeComponent(); ;
 
             timer1.Enabled = true;
 
@@ -113,8 +113,6 @@ namespace PartsEncode
             }
 
             textBoxPart.Text = project + "-" + textBoxUser.Text + base36MMYY + "-" + base36DDhhmm + "-" + Part;
-
-            //textBoxPart.Focus();
 
             Clipboard.SetText(textBoxPart.Text);
         }
