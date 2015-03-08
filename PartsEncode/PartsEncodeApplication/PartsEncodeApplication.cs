@@ -18,7 +18,7 @@ namespace PartsEncode
 
         public PartsEncodeApplication()
         {
-            InitializeComponent();
+            InitializeComponent();aasas
 
             timer1.Enabled = true;
 
