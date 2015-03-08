@@ -18,8 +18,8 @@ namespace PartsEncode
 
         public PartsEncodeApplication()
         {
-            InitializeComponent(); ; ;
-            timer1.Enabled = true;
+            InitializeComponent();
+
             timer1.Enabled = true;
 
             XmlDocument doc = new XmlDocument();
