@@ -12,5 +12,5 @@
 	url = https://github.com/AviranJerbby/PartsEncodeProject/tree/Aviran
 	fetch = +refs/heads/*:refs/remotes/Aviran/*
 [remote "AviranJerbby-patch-1"]
-	url = https://github.com/AviranJerbby/PartsEncodeProject/tree/AviranJerbby-patch-1
+	url = 
 	fetch = +refs/heads/*:refs/remotes/AviranJerbby-patch-1/*
