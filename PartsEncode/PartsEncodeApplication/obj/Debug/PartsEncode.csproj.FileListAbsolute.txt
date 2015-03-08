@@ -16,3 +16,9 @@ C:\Users\Aviran\Documents\Visual Studio 2008\Projects\PartsEncode\PartsEncodeApp
 C:\Users\Aviran\Documents\Visual Studio 2008\Projects\PartsEncode\PartsEncodeApplication\obj\Debug\PartsEncode.csproj.GenerateResource.Cache
 C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\obj\Debug\PartsEncode.exe
 C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\obj\Debug\PartsEncode.pdb
+C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\bin\Debug\PartsEncode.exe
+C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\bin\Debug\PartsEncode.pdb
+C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\obj\Debug\PartsEncode.PartsEncodeApplication.resources
+C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\obj\Debug\PartsEncode.Properties.Resources.resources
+C:\Users\Aviran\Documents\GitHub\PartsEncodeProject\PartsEncode\PartsEncodeApplication\obj\Debug\PartsEncode.csproj.GenerateResource.Cache
