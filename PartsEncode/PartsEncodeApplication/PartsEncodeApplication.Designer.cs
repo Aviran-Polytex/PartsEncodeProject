@@ -50,7 +50,6 @@
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "User:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelProject
             // 
@@ -87,7 +86,6 @@
             this.textBoxUser.Size = new System.Drawing.Size(100, 20);
             this.textBoxUser.TabIndex = 4;
             this.textBoxUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxUser.TextChanged += new System.EventHandler(this.textBoxUser_TextChanged);
             this.textBoxUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxUser_KeyPress);
             // 
             // textBoxPart
@@ -106,7 +104,6 @@
             this.textBoxDate.Size = new System.Drawing.Size(100, 20);
             this.textBoxDate.TabIndex = 6;
             this.textBoxDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxDate.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxDate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDate_KeyPress);
             // 
             // textBoxProject
@@ -117,7 +114,6 @@
             this.textBoxProject.TabIndex = 7;
             this.textBoxProject.Text = "POL";
             this.textBoxProject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxProject.TextChanged += new System.EventHandler(this.textBoxProject_TextChanged);
             // 
             // buttonPart
             // 
@@ -159,7 +155,6 @@
             this.Controls.Add(this.label1);
             this.Name = "PartsEncodeApplication";
             this.Text = "Parts Encode";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,6 +28,9 @@ namespace PartsEncode
             
             textBoxDate.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
             textBoxUser.Text = "K";
+            textBoxDate.TextChanged += new EventHandler(textBox_TextChanged);
+            textBoxProject.TextChanged += new EventHandler(textBox_TextChanged);
+            textBoxUser.TextChanged += new EventHandler(textBox_TextChanged);
 
             buttonPart.Click += new EventHandler(Button_Click);
             buttonAssembly.Click += new EventHandler(Button_Click);
@@ -35,15 +38,6 @@ namespace PartsEncode
             LoadFields(xmlcontents);
 
             UpdatePart();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -62,40 +56,13 @@ namespace PartsEncode
 
         }
 
-        private void textBoxDate_TextChanged(object sender, EventArgs e)
+        private void textBox_TextChanged(object sender, EventArgs e)
         {
             UpdatePart();
-        }
-
-        private void textBoxProject_TextChanged(object sender, EventArgs e)
-        {
-            UpdatePart();
-        }
-
-        private void textBoxUser_TextChanged(object sender, EventArgs e)
-        {
-            UpdatePart();
-        }
-
-        public String Encode(long input)
-        {
-            string CharList = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-            if (input < 0) throw new ArgumentOutOfRangeException("input", input, "input cannot be negative");
-
-            char[] clistarr = CharList.ToCharArray();
-            var result = new Stack<char>();
-            while (input != 0)
-            {
-                result.Push(clistarr[input % 36]);
-                input /= 36;
-            }
-            return new string(result.ToArray());
         }
 
         public void UpdatePart()
         {
-            
             DateTime date = DateTime.Parse(textBoxDate.Text);
             string year = date.Year.ToString().Substring(2);
             string month = date.Month.ToString();
@@ -148,6 +115,22 @@ namespace PartsEncode
                 from el in xdoc.Descendants("Field")
                 where (string)el.Element("Name") == fieldName
                 select el.Element("Value")).FirstOrDefault();
+        }
+
+        public String Encode(long input)
+        {
+            string CharList = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            if (input < 0) throw new ArgumentOutOfRangeException("input", input, "input cannot be negative");
+
+            char[] clistarr = CharList.ToCharArray();
+            var result = new Stack<char>();
+            while (input != 0)
+            {
+                result.Push(clistarr[input % 36]);
+                input /= 36;
+            }
+            return new string(result.ToArray());
         }
 
     }
